@@ -54,9 +54,34 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## Running and Building the Project
 
-You can deploy this project to various hosting platforms like Vercel, Netlify, or GitHub Pages.
+### Running locally
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+### Building for production
+```bash
+# Build the project
+npm run build
+```
+
+## Deploying to Netlify
+
+To deploy this project to Netlify:
+
+1. Link your GitHub repository to Netlify or drag and drop your repository folder
+2. Set the following configuration in Netlify:
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+3. Deploy!
+
+The `_redirects` file is already included in the `public` directory to ensure proper routing for single-page applications.
 
 ## Custom Domain Setup
 
