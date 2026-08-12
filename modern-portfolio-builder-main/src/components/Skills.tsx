@@ -1,20 +1,25 @@
-import { Code2, Database, Wrench } from 'lucide-react';
+import { Code2, Brain, Wrench, Users } from 'lucide-react';
 
 const skillCategories = [
   {
-    title: 'Frontend',
+    title: 'Programming & Computer Science',
     icon: Code2,
-    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap'],
+    skills: ['Python', 'Java', 'Data Structures & Algorithms', 'OOP', 'SQL'],
   },
   {
-    title: 'Backend',
-    icon: Database,
-    skills: ['Node.js (Learning...)'],
+    title: 'AI & Data',
+    icon: Brain,
+    skills: ['Machine Learning', 'Data Analytics', 'MySQL', 'Excel'],
   },
   {
-    title: 'Tools',
+    title: 'Development & Tools',
     icon: Wrench,
-    skills: ['Git', 'GitHub', 'VS Code', 'Figma'],
+    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Git', 'GitHub', 'VS Code', 'Jupyter Notebook', 'Google Colab'],
+  },
+  {
+    title: 'Soft Skills',
+    icon: Users,
+    skills: ['Problem Solving', 'Communication', 'Team Collaboration', 'Time Management', 'Adaptability'],
   },
 ];
 

@@ -19,9 +19,10 @@ const About = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/10 rounded-2xl blur-2xl group-hover:blur-3xl transition-all duration-500" />
             <div className="relative glass-card p-2 rounded-2xl">
               <img
-                src="/images/profile.jpg"
-                alt="Profile"
-                className="w-full aspect-square object-cover rounded-xl"
+                src="/images/profile.jpeg"
+                alt="Patthan Amreen Khan"
+                className="w-full aspect-[3/4] object-cover object-top rounded-xl"
+                referrerPolicy="no-referrer"
               />
             </div>
           </div>
@@ -36,9 +37,7 @@ const About = () => {
                 <div>
                   <h3 className="text-xl font-heading font-semibold mb-2">Who I Am</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    I am a third-year computer science student with a strong interest in web development and problem solving. 
-                    I enjoy creating responsive, user-friendly websites and constantly learning new technologies. 
-                    My goal is to become a full-stack developer and work on impactful projects.
+                    I am a final-year B.Tech Computer Science (AI & ML) student at Vignan Institute of Technology and Sciences with strong programming and problem-solving skills. My primary interests include Python, Java, Data Structures & Algorithms, machine learning, data analytics, and software development.
                   </p>
                 </div>
               </div>
@@ -51,9 +50,14 @@ const About = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-heading font-semibold mb-2">Education</h3>
+                  <p className="text-muted-foreground leading-relaxed font-medium text-foreground">
+                    Vignan Institute of Technology and Sciences
+                  </p>
                   <p className="text-muted-foreground leading-relaxed">
-                    B.Tech Computer Science, Vignan Institute of Technology and Sciences College (2023–2027). 
-                    Relevant coursework: Data Structures, Web Technologies, DBMS, AI.
+                    B.Tech — Computer Science Engineering (AI & ML) (2023–2027)
+                  </p>
+                  <p className="text-sm font-semibold text-primary mt-1">
+                    Status: Final-Year Student • Percentage: 86%
                   </p>
                 </div>
               </div>
@@ -65,11 +69,9 @@ const About = () => {
                   <Target className="text-primary" size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-heading font-semibold mb-2">Career Goals</h3>
+                  <h3 className="text-xl font-heading font-semibold mb-2">Career Goal</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    My goal is to become a skilled full-stack developer and contribute to impactful projects. 
-                    I'm passionate about building accessible, user-friendly applications 
-                    that solve real-world problems.
+                    Seeking an entry-level Software Engineering or AI/ML role where I can apply my technical knowledge, continue learning, and contribute to impactful projects.
                   </p>
                 </div>
               </div>

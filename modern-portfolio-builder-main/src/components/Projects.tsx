@@ -2,18 +2,25 @@ import { Github } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Conscious Consumption',
-    description: 'Conscious Consumption is an AI-powered reflection journal designed to improve digital well-being, mental health, and productivity.',
-    image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&h=400&fit=crop',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'SQLite'],
-    github: 'https://github.com/amreenkhan-1410/Conscious-Consumption.git',
+    title: 'Meridian Market Basket Analysis',
+    description: 'A data analytics project using the Apriori algorithm to analyze customer transaction data, identify frequently purchased item combinations and association rules, and generate product recommendations based on purchasing patterns.',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
+    techStack: ['Python', 'Apriori', 'Data Analytics'],
+    github: 'https://github.com/amreenkhan-1410',
   },
   {
-    title: 'Patient Disease Detection',
-    description: 'A machine learning-based tool that predicts patient diseases from symptoms to help patients take prior action.',
+    title: 'Heart Disease Prediction Using Machine Learning',
+    description: 'Developed a heart disease prediction model using Python, Pandas, Scikit-learn, and Logistic Regression, including data preprocessing, model training, and performance evaluation.',
     image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop',
-    techStack: ['Python', 'Machine Learning', 'OpenCV'],
+    techStack: ['Python', 'Pandas', 'Scikit-learn', 'Logistic Regression', 'Machine Learning'],
     github: 'https://github.com/amreenkhan-1410/Machine-learning.git',
+  },
+  {
+    title: 'Layoffs Data Cleaning and Preprocessing Using SQL',
+    description: 'Performed comprehensive data cleaning and preprocessing on a real-world layoffs dataset using MySQL, including duplicate detection and removal, data standardization, missing/null value handling, correction of inconsistencies, and preparation for analysis.',
+    image: 'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=600&h=400&fit=crop',
+    techStack: ['SQL', 'MySQL', 'Data Cleaning', 'Data Preprocessing'],
+    github: 'https://github.com/amreenkhan-1410',
   },
 ];
 

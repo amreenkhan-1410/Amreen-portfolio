@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import { Github, Linkedin, Mail, Send } from 'lucide-react';
-import { useToast } from '@/hooks/use-toast';
+import { Github, Linkedin, Mail, Phone, Send, CheckCircle2 } from 'lucide-react';
 
 const Contact = () => {
-  const { toast } = useToast();
+  const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -48,11 +47,9 @@ const Contact = () => {
     e.preventDefault();
     
     if (validateForm()) {
-      toast({
-        title: 'Message sent!',
-        description: "Thank you for reaching out. I'll get back to you soon.",
-      });
+      setSubmitted(true);
       setFormData({ name: '', email: '', message: '' });
+      setTimeout(() => setSubmitted(false), 5000);
     }
   };
 
@@ -140,6 +137,13 @@ const Contact = () => {
                 )}
               </div>
 
+              {submitted && (
+                <div className="p-4 rounded-lg bg-green-500/10 border border-green-500/30 text-green-600 flex items-center gap-3 text-sm">
+                  <CheckCircle2 size={20} className="shrink-0" />
+                  <span>Thank you for reaching out! Your message has been sent.</span>
+                </div>
+              )}
+
               <button type="submit" className="btn-primary w-full">
                 <Send size={20} />
                 Send Message
@@ -161,7 +165,7 @@ const Contact = () => {
 
             <div className="space-y-4">
               <a
-                href="mailto:pamreenkhan14@gmail.com"
+                href="mailto:patthan7879@gmail.com"
                 className="flex items-center gap-4 p-4 glass-card rounded-xl hover:border-primary/50 transition-all group"
               >
                 <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
@@ -169,7 +173,20 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Email</p>
-                  <p className="font-medium">pamreenkhan14@gmail.com</p>
+                  <p className="font-medium">patthan7879@gmail.com</p>
+                </div>
+              </a>
+
+              <a
+                href="tel:+918985459041"
+                className="flex items-center gap-4 p-4 glass-card rounded-xl hover:border-primary/50 transition-all group"
+              >
+                <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                  <Phone className="text-primary" size={24} />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">Phone</p>
+                  <p className="font-medium">+91 8985459041</p>
                 </div>
               </a>
 
@@ -184,12 +201,12 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">GitHub</p>
-                  <p className="font-medium">github.com/amreenkhan-1410</p>
+                  <p className="font-medium">amreenkhan-1410</p>
                 </div>
               </a>
 
               <a
-                href="https://www.linkedin.com/in/amreen-khan-43b000324/"
+                href="https://linkedin.com/in/amreen-khan-43b000324"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 glass-card rounded-xl hover:border-primary/50 transition-all group"
@@ -199,7 +216,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">LinkedIn</p>
-                  <p className="font-medium">LinkedIn Profile</p>
+                  <p className="font-medium">Amreen Khan</p>
                 </div>
               </a>
             </div>
